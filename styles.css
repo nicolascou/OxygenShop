@@ -6,7 +6,7 @@
 }
 
 body {
-  display: relative;
+  min-width: 320px;
 }
 
 .header {
@@ -63,6 +63,64 @@ body {
 .hero {
   margin-top: 70px;
   padding-top: 100px;
+  text-align: center;
+}
+.hero__title {
+  font-weight: 400;
+  font-size: 35px;
+  margin-bottom: 20px;
+}
+.hero__subtitle {
+  display: inline-block;
+  font-size: 16px;
+  margin: 0 30px;
+  margin-bottom: 50px;
+}
+.hero__btn {
+  display: inline-block;
+  border-radius: 40px;
+  box-shadow: 5px 10px 14px rgba(7, 172, 230, 0.29);
+  background-color: #08A6E4;
+  padding: 22px 0;
+  width: 275px;
+  text-decoration: none;
+  color: white;
+  font-size: 16px;
+  font-weight: 700;
+  margin-bottom: 50px;
+}
+
+.intro {
+  margin-bottom: 100px;
+}
+.intro__image {
+  width: 100%;
+  height: auto;
+}
+.intro__title {
+  font-weight: 300;
+  font-size: 30px;
+  line-height: 35px;
+  text-align: center;
+  margin: 25px 40px;
+}
+.intro__box {
+  text-align: center;
+}
+.intro__box__image {
+  width: 65px;
+  height: 65px;
+}
+.intro__box__number {
+  font-weight: 800;
+  font-size: 20px;
+  letter-spacing: 5.96px;
+}
+.intro__box__text {
+  font-weight: 400;
+  font-size: 17px;
+  color: #A5A5A5;
+  margin: 25px 100px;
 }
 
 /*# sourceMappingURL=styles.css.map */

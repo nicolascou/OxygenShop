@@ -9,7 +9,7 @@ $color-grey: #A5A5A5;
 }
 
 body {
-  display: relative;
+  min-width: 320px;
 }
 
 .header {
@@ -71,4 +71,70 @@ body {
 .hero {
   margin-top: 70px;
   padding-top: 100px;
+  text-align: center;
+
+  &__title {
+    font-weight: 400;
+    font-size: 35px;
+    margin-bottom: 20px;
+  }
+
+  &__subtitle {
+    display: inline-block;
+    font-size: 16px;
+    margin: 0 30px;
+    margin-bottom: 50px;
+  }
+
+  &__btn {
+    display: inline-block;
+    border-radius: 40px;
+    box-shadow: 5px 10px 14px rgba(7, 172, 230, 0.29);
+    background-color: $color-primary;
+    padding: 22px 0;
+    width: 275px;
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    font-weight: 700;
+    margin-bottom: 50px;
+  }
+}
+
+.intro {
+  margin-bottom: 100px;
+  
+  &__image {
+    width: 100%;
+    height: auto;
+  }
+
+  &__title {
+    font-weight: 300;
+    font-size: 30px;
+    line-height: 35px;
+    text-align: center;
+    margin: 25px 40px;
+  }
+
+  &__box {
+    text-align: center;
+    &__image {
+      width: 65px;
+      height: 65px;
+    }
+
+    &__number {
+      font-weight: 800;
+      font-size: 20px;
+      letter-spacing: 5.96px;
+    }
+
+    &__text {
+      font-weight: 400;
+      font-size: 17px;
+      color: $color-grey;
+      margin: 25px 100px;
+    }
+  }
 }
