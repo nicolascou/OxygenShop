@@ -7,6 +7,299 @@
   <title>OxygenShop</title>
 </head>
 <body>
-  
+  <header class="header header--show-menu">
+    <h1 class="header__title">OXYGENShop</h1>
+    <button class="header__hamburger">
+
+      <svg class="header__hamburger__btn" width="20" height="12" viewBox="0 0 20 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <rect y="10" width="20" height="2" fill="#07ACE6"/>
+        <rect y="5" width="20" height="2" fill="#07ACE6"/>
+        <rect width="20" height="2" fill="#07ACE6"/>
+      </svg>
+
+      <svg class="header__hamburger__cross" width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M1.49128 12.5013L12.4939 1.49872M12.4939 12.5013L1.49128 1.49872" stroke="#07ACE6" stroke-width="2"/>
+      </svg>
+    </button>
+    <div class="header__menu">
+      <ul>
+        <li class="header__menu__link header__menu__link--hover">WHY US</li>
+        <li class="header__menu__link header__menu__link--hover">BENEFITS</li>
+        <li class="header__menu__link header__menu__link--hover">PRICES</li>
+        <li class="header__menu__link header__menu__link--hover">CONTACT</li>
+      </ul>
+    </div>
+  </header>
+
+  <main>
+    <div class="hero">
+      <h2 class="hero__title">Sell More!</h2>
+      <p class="hero__subtitle">Open shop on our platform and increase your sales</p>
+      <a href="" class="hero__btn">Open your shop</a>
+    </div>
+
+    <section class="intro">
+      <img class="intro__image" src="" alt="Introduction image">
+      <p class="intro__title"></p>
+      <div class="intro__box">
+        <svg class="intro__box__image" viewBox="0 0 75 63" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="32.085" cy="31.355" r="31.355" fill="#FB3B64"/>
+          <path d="M52.819 31H53.17C54.5726 31.0269 55.9642 30.747 57.2473 30.1797C58.5304 29.6125 59.674 28.7716 60.598 27.716C64.663 23.047 63.979 15.041 63.924 14.275C63.624 8.54099 60.975 5.79699 58.784 4.50999C57.056 3.52578 55.1026 3.00558 53.114 2.99999H52.937C50.9481 2.99421 48.9915 3.50265 47.257 4.47599C45.04 5.75599 42.35 8.49999 42.084 14.29C42.01 15.045 41.345 23.058 45.41 27.731C46.3342 28.7803 47.4756 29.6161 48.7549 30.1806C50.0342 30.745 51.4209 31.0246 52.819 31ZM44.907 14.546V14.46C45.265 6.74499 50.627 5.91799 52.926 5.91799H53.052C55.897 5.98199 60.731 7.16699 61.06 14.464C61.0541 14.4927 61.0541 14.5223 61.06 14.551C61.06 14.626 61.799 21.945 58.473 25.796C57.7926 26.5536 56.954 27.1524 56.0165 27.5499C55.079 27.9473 54.0656 28.1338 53.048 28.096H52.941C51.9241 28.1415 50.9099 27.9585 49.9729 27.5605C49.036 27.1625 48.2002 26.5595 47.527 25.796C44.179 21.96 44.896 14.611 44.907 14.546Z" fill="black"/>
+          <path d="M75 44.372V44.072C74.9361 41.951 74.8 36.988 70.149 35.402L70.0401 35.368C66.8771 34.498 63.8728 33.1299 61.14 31.315C60.9847 31.2009 60.8082 31.1189 60.6208 31.074C60.4334 31.029 60.2389 31.0219 60.0487 31.0531C59.8585 31.0844 59.6765 31.1533 59.5133 31.2558C59.3501 31.3584 59.209 31.4925 59.0984 31.6503C58.9877 31.8081 58.9097 31.9864 58.8689 32.1748C58.8281 32.3632 58.8254 32.5578 58.8609 32.7472C58.8963 32.9367 58.9693 33.1171 59.0754 33.278C59.1816 33.4389 59.3188 33.5769 59.479 33.684C62.4728 35.6922 65.7722 37.2018 69.2491 38.154C71.744 39.045 72.022 41.711 72.097 44.17C72.0915 44.2589 72.0915 44.3481 72.097 44.437C72.1165 45.5454 72.0412 46.6534 71.8721 47.749C70.1621 48.723 63.357 52.133 53.0091 52.133C42.6611 52.133 35.854 48.71 34.111 47.725C33.9366 46.63 33.8613 45.5215 33.886 44.413V44.146C33.961 41.702 34.239 39.033 36.734 38.13C40.209 37.1726 43.5077 35.6634 46.504 33.66C46.6643 33.5529 46.8015 33.4149 46.9077 33.254C47.0138 33.0931 47.0868 32.9127 47.1222 32.7232C47.1577 32.5338 47.155 32.3392 47.1142 32.1508C47.0734 31.9624 46.9954 31.7841 46.8847 31.6263C46.7741 31.4685 46.633 31.3344 46.4698 31.2318C46.3066 31.1293 46.1246 31.0604 45.9344 31.0291C45.7442 30.9979 45.5497 31.005 45.3623 31.0499C45.1749 31.0949 44.9984 31.1769 44.8431 31.291C42.1237 33.1117 39.1296 34.4839 35.975 35.355L35.866 35.389C31.218 36.987 31.079 41.946 31 44.059C31.0056 44.1479 31.0056 44.2371 31 44.326V44.36C30.9445 45.9959 31.1281 47.6312 31.545 49.214C31.6555 49.4893 31.8519 49.7215 32.105 49.876C32.428 50.09 40.1271 55.001 53.0161 55.001C65.9051 55.001 73.6 50.079 73.926 49.876C74.1767 49.7148 74.371 49.4796 74.482 49.203C74.8849 47.6257 75.0593 45.9988 75 44.372Z" fill="black"/>
+        </svg>
+        <p class="intro__box__number">100000+</p>
+        <p class="intro__box__text">daily entries</p>
+      </div>
+
+      <div class="intro__box">
+        <svg class="intro__box__image" viewBox="0 0 87 63" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="31.5" cy="31.5" r="31.5" fill="#08A6E4"/>
+          <path d="M83.996 30.5C83.996 30.5 71.175 47 53.496 47C35.817 47 22.996 30.5 22.996 30.5C22.996 30.5 35.817 14 53.496 14C71.175 14 83.996 30.5 83.996 30.5Z" stroke="black" stroke-width="3.5" stroke-miterlimit="10"/>
+          <path d="M53.496 42.995C60.3995 42.995 65.996 37.3986 65.996 30.495C65.996 23.5914 60.3995 17.995 53.496 17.995C46.5924 17.995 40.996 23.5914 40.996 30.495C40.996 37.3986 46.5924 42.995 53.496 42.995Z" stroke="black" stroke-width="3.5" stroke-miterlimit="10"/>
+          <path d="M55.504 34.21C54.6582 34.7377 53.6611 34.9696 52.6693 34.8693C51.6774 34.769 50.747 34.3423 50.024 33.656C49.3009 32.9697 48.8262 32.0627 48.6744 31.0774C48.5226 30.0922 48.7023 29.0844 49.1852 28.2123C49.6681 27.3402 50.4269 26.6531 51.3426 26.2589C52.2582 25.8647 53.2789 25.7857 54.2442 26.0343C55.2096 26.283 56.0651 26.8451 56.6765 27.6325C57.2878 28.42 57.6204 29.3881 57.6219 30.385V30.512" stroke="black" stroke-width="3.5" stroke-miterlimit="10" stroke-linecap="round"/>
+        </svg> 
+        <p class="intro__box__number">100000+</p>
+        <p class="intro__box__text">seen products every day</p>
+      </div>
+
+      <div class="intro__box">
+        <svg viewBox="0 0 84 63" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="32.015" cy="31.355" r="31.355" fill="#55DFB4"/>
+          <path d="M83.486 18H32.514C32.447 17.9995 32.3806 18.0122 32.3185 18.0373C32.2564 18.0624 32.1999 18.0996 32.1522 18.1466C32.1045 18.1935 32.0665 18.2495 32.0403 18.3112C32.0142 18.3728 32.0005 18.439 32 18.506V53.494C32.0005 53.561 32.0142 53.6272 32.0403 53.6889C32.0665 53.7506 32.1045 53.8065 32.1522 53.8535C32.1999 53.9005 32.2564 53.9376 32.3185 53.9627C32.3806 53.9879 32.447 54.0005 32.514 54H83.486C83.553 54.0005 83.6194 53.9879 83.6815 53.9627C83.7436 53.9376 83.8001 53.9005 83.8478 53.8535C83.8955 53.8065 83.9335 53.7506 83.9597 53.6889C83.9858 53.6272 83.9995 53.561 84 53.494V18.506C83.9995 18.439 83.9858 18.3728 83.9597 18.3112C83.9335 18.2495 83.8955 18.1935 83.8478 18.1466C83.8001 18.0996 83.7436 18.0624 83.6815 18.0373C83.6194 18.0122 83.553 17.9995 83.486 18V18ZM34.849 51.192V20.808H81.149V51.192H34.849Z" fill="black"/>
+          <path d="M34.4139 17H79.5859C79.9838 17 80.3653 16.842 80.6466 16.5607C80.9279 16.2794 81.0859 15.8978 81.0859 15.5C81.0859 15.1022 80.9279 14.7206 80.6466 14.4393C80.3653 14.158 79.9838 14 79.5859 14H34.4139C34.0161 14 33.6346 14.158 33.3533 14.4393C33.072 14.7206 32.9139 15.1022 32.9139 15.5C32.9139 15.8978 33.072 16.2794 33.3533 16.5607C33.6346 16.842 34.0161 17 34.4139 17V17Z" fill="black"/>
+          <path d="M37.424 13H77.5719C77.9698 13 78.3513 12.842 78.6326 12.5607C78.9139 12.2794 79.0719 11.8978 79.0719 11.5C79.0719 11.1022 78.9139 10.7206 78.6326 10.4393C78.3513 10.158 77.9698 10 77.5719 10H37.424C37.0261 10 36.6446 10.158 36.3633 10.4393C36.082 10.7206 35.924 11.1022 35.924 11.5C35.924 11.8978 36.082 12.2794 36.3633 12.5607C36.6446 12.842 37.0261 13 37.424 13V13Z" fill="black"/>
+          <path d="M40.408 9H74.592C74.9775 8.98747 75.3423 8.82248 75.6062 8.54125C75.8702 8.26002 76.0118 7.88553 76 7.5C76.0118 7.11447 75.8702 6.73998 75.6062 6.45875C75.3423 6.17752 74.9775 6.01253 74.592 6H40.408C40.0224 6.01253 39.6577 6.17752 39.3937 6.45875C39.1297 6.73998 38.9881 7.11447 39 7.5C38.9881 7.88553 39.1297 8.26002 39.3937 8.54125C39.6577 8.82248 40.0224 8.98747 40.408 9V9Z" fill="black"/>
+        </svg>         
+        <p class="intro__box__number">10000+</p>
+        <p class="intro__box__text">added posts daily</p>
+      </div>
+    </section>
+
+    <section class="content">
+      <div class="content__box">
+        <img class="content__box__image" src="" alt="">
+        <svg class="content__box__red-circle" width="95" height="95" viewBox="0 0 95 95" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect x="-16.22" y="47.7245" width="90.12" height="90.12" rx="41" transform="rotate(-45 -16.22 47.7245)" fill="#FB3B64"/>
+        </svg>
+        <p class="content__box__title">Be always first</p>
+        <p class="content__box__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+      </div>
+
+      <div class="content__box">
+        <img class="content__box__image" src="" alt="">
+        <svg width="132" height="132" viewBox="0 0 132 132" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <ellipse cx="65.94" cy="65.85" rx="65.94" ry="65.85" fill="#08A6E4"/>
+        </svg>          
+        <p class="content__box__title">Your shop is where you are!</p>
+        <p class="content__box__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+      </div>
+
+      <div class="content__box">
+        <p class="content__box__title">Increase recognition your brand!</p>
+        <p class="content__box__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+        <img class="content__box__final-image" src="" alt="">
+      </div>
+    </section>
+
+    <section class="pricing">
+      <div class="pricing__box pricing__box--basic">
+        <div class="pricing__box__left">
+          <p class="pricing__box__left__name">Basic</p>
+          <p class="pricing__box__left__price">$0</p>
+        </div>
+        <div class="pricing__box__right">
+          <ul>
+            <li class="pricing__box__right__item">
+              <svg width="11" height="11" viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="0.5" y="0.5" width="10" height="10" rx="1.5" stroke="#55DFB4"/>
+                <path d="M3 5.85714L4.54903 7.94359C4.56952 7.9712 4.61112 7.97036 4.63049 7.94195L8 3" stroke="#55DFB4" stroke-linecap="round"/>
+              </svg>
+              100 MB HDD
+            </li>
+            <li class="pricing__box__right__item">
+              <svg width="11" height="11" viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="0.5" y="0.5" width="10" height="10" rx="1.5" stroke="#55DFB4"/>
+                <path d="M3 5.85714L4.54903 7.94359C4.56952 7.9712 4.61112 7.97036 4.63049 7.94195L8 3" stroke="#55DFB4" stroke-linecap="round"/>
+              </svg>
+              1 Subdomain
+            </li>
+            <li class="pricing__box__right__item">
+              <svg width="11" height="11" viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="0.5" y="0.5" width="10" height="10" rx="1.5" stroke="#55DFB4"/>
+                <path d="M3 5.85714L4.54903 7.94359C4.56952 7.9712 4.61112 7.97036 4.63049 7.94195L8 3" stroke="#55DFB4" stroke-linecap="round"/>
+              </svg>
+              2 E-mails
+            </li>
+            <li class="pricing__box__right__item">
+              <svg width="11" height="12" viewBox="0 0 11 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="0.5" y="1.45996" width="10" height="10" rx="1.5" stroke="#EB476E"/>
+                <path d="M4.05142 4.27096L5.42842 6.10696L5.50042 6.24196L5.57242 6.10696L6.94042 4.27096H7.63342L5.85142 6.62896L7.63342 8.95996H6.94042L5.57242 7.13296L5.50042 7.00696L5.42842 7.13296L4.06042 8.95996H3.36742L5.14042 6.62896L3.36742 4.27096H4.05142Z" fill="#EB476E"/>
+              </svg> 
+              Two years license
+            </li>
+            <li class="pricing__box__right__item">
+              <svg width="11" height="12" viewBox="0 0 11 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="0.5" y="1.45996" width="10" height="10" rx="1.5" stroke="#EB476E"/>
+                <path d="M4.05142 4.27096L5.42842 6.10696L5.50042 6.24196L5.57242 6.10696L6.94042 4.27096H7.63342L5.85142 6.62896L7.63342 8.95996H6.94042L5.57242 7.13296L5.50042 7.00696L5.42842 7.13296L4.06042 8.95996H3.36742L5.14042 6.62896L3.36742 4.27096H4.05142Z" fill="#EB476E"/>
+              </svg>                
+              Full support
+            </li>
+          </ul>
+        </div>
+        <button class="product__box__btn">Begin</button>
+      </div>
+
+      <div class="pricing__box pricing__box--professional">
+        <div class="pricing__box__left">
+          <p class="pricing__box__left__name">Professional</p>
+          <p class="pricing__box__left__price">$25</p>
+        </div>
+        <div class="pricing__box__right">
+          <ul>
+            <li class="pricing__box__right__item">
+              <svg width="11" height="11" viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="0.5" y="0.5" width="10" height="10" rx="1.5" stroke="#55DFB4"/>
+                <path d="M3 5.85714L4.54903 7.94359C4.56952 7.9712 4.61112 7.97036 4.63049 7.94195L8 3" stroke="#55DFB4" stroke-linecap="round"/>
+              </svg>
+              500 MB HDD
+            </li>
+            <li class="pricing__box__right__item">
+              <svg width="11" height="11" viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="0.5" y="0.5" width="10" height="10" rx="1.5" stroke="#55DFB4"/>
+                <path d="M3 5.85714L4.54903 7.94359C4.56952 7.9712 4.61112 7.97036 4.63049 7.94195L8 3" stroke="#55DFB4" stroke-linecap="round"/>
+              </svg>
+              2 Subdomain
+            </li>
+            <li class="pricing__box__right__item">
+              <svg width="11" height="11" viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="0.5" y="0.5" width="10" height="10" rx="1.5" stroke="#55DFB4"/>
+                <path d="M3 5.85714L4.54903 7.94359C4.56952 7.9712 4.61112 7.97036 4.63049 7.94195L8 3" stroke="#55DFB4" stroke-linecap="round"/>
+              </svg>
+              5 E-mails
+            </li>
+            <li class="pricing__box__right__item">
+              <svg width="11" height="11" viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="0.5" y="0.5" width="10" height="10" rx="1.5" stroke="#55DFB4"/>
+                <path d="M3 5.85714L4.54903 7.94359C4.56952 7.9712 4.61112 7.97036 4.63049 7.94195L8 3" stroke="#55DFB4" stroke-linecap="round"/>
+              </svg>
+              One year license
+            </li>
+            <li class="pricing__box__right__item">
+              <svg width="11" height="12" viewBox="0 0 11 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="0.5" y="1.45996" width="10" height="10" rx="1.5" stroke="#EB476E"/>
+                <path d="M4.05142 4.27096L5.42842 6.10696L5.50042 6.24196L5.57242 6.10696L6.94042 4.27096H7.63342L5.85142 6.62896L7.63342 8.95996H6.94042L5.57242 7.13296L5.50042 7.00696L5.42842 7.13296L4.06042 8.95996H3.36742L5.14042 6.62896L3.36742 4.27096H4.05142Z" fill="#EB476E"/>
+              </svg> 
+              Full support
+          </li>
+          </ul>
+        </div>
+        <button class="product__box__btn">Begin</button>
+      </div>
+
+      <div class="pricing__box pricing__box--premium">
+        <div class="pricing__box__left">
+          <p class="pricing__box__left__name">Premium</p>
+          <p class="pricing__box__left__price">$60</p>
+        </div>
+        <div class="pricing__box__right">
+          <ul>
+            <li class="pricing__box__right__item">
+              <svg width="11" height="11" viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="0.5" y="0.5" width="10" height="10" rx="1.5" stroke="#55DFB4"/>
+                <path d="M3 5.85714L4.54903 7.94359C4.56952 7.9712 4.61112 7.97036 4.63049 7.94195L8 3" stroke="#55DFB4" stroke-linecap="round"/>
+              </svg>
+              2 GB HDD
+            </li>
+            <li class="pricing__box__right__item">
+              <svg width="11" height="11" viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="0.5" y="0.5" width="10" height="10" rx="1.5" stroke="#55DFB4"/>
+                <path d="M3 5.85714L4.54903 7.94359C4.56952 7.9712 4.61112 7.97036 4.63049 7.94195L8 3" stroke="#55DFB4" stroke-linecap="round"/>
+              </svg>
+              5 Subdomains
+            </li>
+            <li class="pricing__box__right__item">
+              <svg width="11" height="11" viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="0.5" y="0.5" width="10" height="10" rx="1.5" stroke="#55DFB4"/>
+                <path d="M3 5.85714L4.54903 7.94359C4.56952 7.9712 4.61112 7.97036 4.63049 7.94195L8 3" stroke="#55DFB4" stroke-linecap="round"/>
+              </svg>
+              20 E-mails
+            </li>
+            <li class="pricing__box__right__item">
+              <svg width="11" height="11" viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="0.5" y="0.5" width="10" height="10" rx="1.5" stroke="#55DFB4"/>
+                <path d="M3 5.85714L4.54903 7.94359C4.56952 7.9712 4.61112 7.97036 4.63049 7.94195L8 3" stroke="#55DFB4" stroke-linecap="round"/>
+              </svg>
+              Two years license
+            </li>
+            <li class="pricing__box__right__item">
+              <svg width="11" height="11" viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="0.5" y="0.5" width="10" height="10" rx="1.5" stroke="#55DFB4"/>
+                <path d="M3 5.85714L4.54903 7.94359C4.56952 7.9712 4.61112 7.97036 4.63049 7.94195L8 3" stroke="#55DFB4" stroke-linecap="round"/>
+              </svg>
+              Full support
+            </li>
+          </ul>
+        </div>
+        <button class="product__box__btn">Begin</button>
+      </div>
+    </section>
+  </main>
+
+  <section class="contact">
+    <p class="contact__title">Any questions?</p>
+    <p class="contact__subtitle">Leave your email address or call us!</p>
+    <p class="contact__info">
+      <svg width="27" height="27" viewBox="0 0 27 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M21.8 4H4.19995C3.61158 4.00896 3.05077 4.25083 2.64044 4.67259C2.23011 5.09436 2.00374 5.66161 2.01095 6.25L1.99995 19.75C1.99514 20.3396 2.22379 20.9071 2.63598 21.3287C3.04818 21.7502 3.61042 21.9916 4.19995 22H21.8C22.3895 21.9916 22.9517 21.7502 23.3639 21.3287C23.7761 20.9071 24.0048 20.3396 24 19.75V6.25C24.0048 5.66043 23.7761 5.0929 23.3639 4.67134C22.9517 4.24978 22.3895 4.00843 21.8 4V4ZM21.8 19.75H4.19995V8.5L13 14.125L21.8 8.5V19.75ZM13 11.875L4.19995 6.25H21.8L13 11.875Z" fill="#08A6E4"/>
+      </svg>
+      info@bestshop.xyz
+    </p>
+    <p class="contact__info">
+      <svg width="27" height="27" viewBox="0 0 27 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M7.022 11.656C8.63264 14.8054 11.1946 17.3674 14.344 18.978L16.788 16.534C16.933 16.388 17.116 16.2855 17.3163 16.2384C17.5166 16.1912 17.7261 16.2011 17.921 16.267C19.2013 16.6875 20.5404 16.9012 21.888 16.9C22.1826 16.9005 22.465 17.0177 22.6734 17.2259C22.8818 17.4341 22.9992 17.7164 23 18.011V21.889C22.9992 22.1834 22.8819 22.4655 22.6737 22.6737C22.4655 22.8819 22.1834 22.9992 21.889 23C19.4084 23.0003 16.952 22.5119 14.6602 21.5627C12.3683 20.6135 10.2859 19.2222 8.53187 17.4681C6.77782 15.7141 5.38647 13.6317 4.4373 11.3398C3.48814 9.04798 2.99974 6.59161 3 4.111C3.00079 3.81659 3.1181 3.53446 3.32628 3.32628C3.53446 3.1181 3.81659 3.00079 4.111 3H8C8.29441 3.00079 8.57654 3.1181 8.78472 3.32628C8.9929 3.53446 9.11021 3.81659 9.111 4.111C9.10889 5.45865 9.32259 6.79793 9.744 8.078C9.8068 8.27411 9.81407 8.48377 9.765 8.68376C9.71593 8.88374 9.61244 9.06623 9.466 9.211L7.022 11.656Z" stroke="#08A6E4" stroke-width="2"/>
+      </svg>
+      123 456 789
+    </p>
+    <form class="contact__form">
+      <input class="contact__form__input" type="text">
+      <input class="contact__form__input" type="email">
+      <input class="contact__form__checkbox" id="checkbox" type="checkbox">
+      <label class="contact__form__checkbox-label" for="checkbox">
+        I hereby give consent for my personal data included in my application to be processed for the purposes of the recruitment process under the European Parliament’s and Council of the European Union Regulation on the Protection of Natural Persons as of 27 April 2016, with regard to the processing of personal data and on the free movement of such data, and repealing Directive 95/46/EC (Data Protection Directive)
+      </label>
+      <button class="contact__form__btn" type="submit">Send</button>
+    </form>
+  </section>
+
+  <footer class="footer">
+    <div class="footer__left">
+      <p class="footer__left__title">OXYGENShop</p>
+      <p class="footer__left__copyright">© 2022 OXYGEN, All Rights Reserved</p>
+    </div>
+    <div class="footer__right">
+      <svg class="footer__right__icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <g clip-path="url(#clip0_4_866)">
+        <path d="M12 24C18.6274 24 24 18.6274 24 12C24 5.37258 18.6274 0 12 0C5.37258 0 0 5.37258 0 12C0 18.6274 5.37258 24 12 24Z" fill="#55ACEE"/>
+        <path d="M18.9969 8.07207C18.4727 8.30444 17.9165 8.45681 17.3469 8.52407C17.9468 8.16523 18.3957 7.60046 18.6099 6.93507C18.0463 7.27074 17.4294 7.50749 16.7859 7.63507C16.3523 7.17799 15.7806 6.87601 15.1586 6.77555C14.5366 6.6751 13.8989 6.78173 13.3434 7.07906C12.7879 7.37639 12.3455 7.84795 12.0842 8.42123C11.8229 8.99451 11.7571 9.63776 11.8969 10.2521C10.755 10.1951 9.63778 9.89855 8.61788 9.38171C7.59797 8.86486 6.69819 8.13928 5.97695 7.25207C5.60953 7.88446 5.49695 8.63311 5.66211 9.3456C5.82727 10.0581 6.25777 10.6808 6.86595 11.0871C6.41006 11.0727 5.96426 10.9493 5.56595 10.7271C5.56595 10.7391 5.56595 10.7511 5.56595 10.7631C5.56597 11.4256 5.79492 12.0678 6.21405 12.581C6.63317 13.0942 7.21673 13.4467 7.86595 13.5791C7.44208 13.6946 6.99743 13.7117 6.56595 13.6291C6.74934 14.1998 7.10656 14.699 7.58763 15.0567C8.0687 15.4144 8.64956 15.6128 9.24895 15.6241C8.04364 16.5651 6.51547 16.9921 4.99695 16.8121C6.23148 17.6032 7.65622 18.0474 9.12161 18.0981C10.587 18.1488 12.039 17.8041 13.3253 17.1001C14.6115 16.3962 15.6846 15.359 16.4318 14.0974C17.179 12.8358 17.5728 11.3963 17.5719 9.93007C17.5719 9.80607 17.5719 9.68207 17.5639 9.55907C18.1264 9.15272 18.6117 8.64914 18.9969 8.07207Z" fill="#F1F2F2"/>
+        </g>
+        <defs>
+        <clipPath id="clip0_4_866">
+        <rect width="24" height="24" fill="white"/>
+        </clipPath>
+        </defs>
+      </svg>
+      <svg class="footer__right__icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <g clip-path="url(#clip0_4_870)">
+        <path d="M12 24C18.6274 24 24 18.6274 24 12C24 5.37258 18.6274 0 12 0C5.37258 0 0 5.37258 0 12C0 18.6274 5.37258 24 12 24Z" fill="#3B5998"/>
+        <path d="M15.0881 12.4799H12.9021V20.2379H9.59111V12.4799H8.01611V9.75386H9.59111V7.98886C9.56186 7.5472 9.62909 7.10446 9.78814 6.69139C9.94719 6.27831 10.1942 5.90481 10.5121 5.59681C10.83 5.2888 11.2112 5.05368 11.6291 4.90778C12.0469 4.76187 12.4916 4.70867 12.9321 4.75187L15.3851 4.76187V7.40886H13.6051C13.5079 7.40287 13.4105 7.41834 13.3199 7.45419C13.2293 7.49003 13.1478 7.54537 13.0809 7.61628C13.0141 7.68719 12.9638 7.77193 12.9334 7.86449C12.903 7.95705 12.8933 8.05516 12.9051 8.15187V9.75187H15.3801L15.0881 12.4799Z" fill="white"/>
+        </g>
+        <defs>
+        <clipPath id="clip0_4_870">
+        <rect width="24" height="24" fill="white"/>
+        </clipPath>
+        </defs>
+      </svg>  
+    </div>
+  </footer>
 </body>
 </html>
