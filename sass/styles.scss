@@ -104,8 +104,11 @@ body {
   margin-bottom: 100px;
   
   &__image {
-    width: 100%;
-    height: auto;
+    width: auto;
+    height: 300px;
+    background-image: url(img/background1.png);
+    background-position: center;
+    background-size: cover;
   }
 
   &__title {
@@ -142,9 +145,11 @@ body {
   background-color: #F7F7F7;
   padding-top: 20px;
   padding-bottom: 40px;
+  text-align: center;
   
   &__box {
     display: inline-block;
+    text-align: left;
     margin: 20px 15px;
     border: 1px solid #E8E9ED;
     border-radius: 5px;
@@ -163,25 +168,26 @@ body {
       height: 110px;
       z-index: 2;
 
+      &__red-circle {
+        position: absolute;
+        top: -25%;
+        right: 30%;
+        background: #FB3B64;
+        border-radius: 41px;
+        transform: rotate(-45deg);
+        width: 90.12px;
+        height: 90.12px;
+        transform: translateZ(-10px);
+      }
+
       &--macbook {
         background-image: url(img/macbook2.png);
+        transform-style: preserve-3d;
       }
       &--iphone {
         background-image: url(img/iphone.png);
         height: 150px;
       }
-    }
-
-    &__red-circle {
-      position: absolute;
-      background: #FB3B64;
-      border-radius: 41px;
-      transform: rotate(-45deg);
-      width: 90.12px;
-      height: 90.12px;
-      right: 20vw;
-      top: 5%;
-      z-index: 1;
     }
 
     &__blue-circle {
@@ -193,6 +199,7 @@ body {
       border-radius: 50%;
       height: 150px;
       width: 150px;
+      z-index: 1;
     }
     
     &__title {
@@ -207,6 +214,7 @@ body {
       font-size: 14px;
       line-height: 150%;
       color: black;
+      text-align: left;
     }
   }
 
@@ -219,6 +227,7 @@ body {
     background: #55DFB4;
     border: 1px solid #E8E9ED;
     border-radius: 5px;
+    text-align: left;
 
     &__image {
       position: absolute;
@@ -283,7 +292,7 @@ body {
     }
 
     &--basic {
-      margin: 15px 30px;
+      margin: 15px 40px;
       border: 1px solid #FB3B64;
       .pricing__box {
         &__btn {
@@ -311,7 +320,7 @@ body {
 
     &--premium {
       border: 1px solid #55DFB4;
-      margin: 15px 30px;
+      margin: 15px 40px;
       .pricing__box {
         &__btn {
           background-color: #55DFB4;
@@ -398,14 +407,31 @@ body {
     }
 
     &__checkbox {
+      margin-top: 10px;
       display: flex;
       align-items: flex-start;
       
       &__check {
+        display: none;
+      }
+
+      &__check + label:before {
+        content: "";
+        display: inline-block;
+        vertical-align: middle;
+        width: 24px;
+        height: 24px;
         border: 1px solid #95989A;
         border-radius: 4px;
-        height: 100%;
         margin-right: 10px;
+        background-color: #fff;
+      }
+
+      &__check:checked + label:before {
+        content: "\2713";
+        color: $color-primary;
+        text-align: center;
+        background-color: white;
       }
   
       &__label {
@@ -467,4 +493,96 @@ body {
       margin-left: 10px;
     }
   }
+}
+
+@media only screen and (min-width: 1000px) {
+  .header {
+    padding: 0 80px;
+    
+    &__hamburger {
+      display: none;
+    }
+    
+    &__menu {
+      display: block;
+      margin: 0;
+      height: 70px;
+
+      &__link {
+        margin: 0;
+        margin-left: 20px;
+        display: flex;
+        align-items: center;
+        height: 100%;
+
+        &:hover {
+          border-bottom: 2px solid $color-primary;
+        }
+      }
+    }
+
+    &__menu-navbar {
+      display: flex;
+      height: 100%;
+    }
+  }
+
+  .intro {
+    &__image {
+      margin-top: 30px;
+      height: 45vh;
+    }
+    
+    &__title {
+      margin: 100px 0;
+    }
+
+    &__box {
+      &__image {
+        width: 80px;
+      }
+    }
+
+    &__wrapper {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+
+  .content {
+    padding: 50px 100px;
+    &__box {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      margin-bottom: 40px;
+
+      &__title {
+        margin-bottom: 30px;
+      }
+
+      &__image {
+        width: 400px;
+      }
+
+      &__red-circle {
+        right: 10%;
+      }
+
+      &__blue-circle {
+        top: 10%;
+        left: 25%;
+      }
+    }
+
+    &__box-left {
+      order: 1;
+    }
+
+    &__box-right {
+      order: 2;
+    }
+  }
+
 }

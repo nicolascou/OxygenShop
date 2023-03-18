@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   box-sizing: border-box;
   margin: 0;
@@ -93,8 +94,11 @@ body {
   margin-bottom: 100px;
 }
 .intro__image {
-  width: 100%;
-  height: auto;
+  width: auto;
+  height: 300px;
+  background-image: url(img/background1.png);
+  background-position: center;
+  background-size: cover;
 }
 .intro__title {
   font-weight: 300;
@@ -126,9 +130,11 @@ body {
   background-color: #F7F7F7;
   padding-top: 20px;
   padding-bottom: 40px;
+  text-align: center;
 }
 .content__box {
   display: inline-block;
+  text-align: left;
   margin: 20px 15px;
   border: 1px solid #E8E9ED;
   border-radius: 5px;
@@ -147,23 +153,24 @@ body {
   height: 110px;
   z-index: 2;
 }
-.content__box__image--macbook {
-  background-image: url(img/macbook2.png);
-}
-.content__box__image--iphone {
-  background-image: url(img/iphone.png);
-  height: 150px;
-}
-.content__box__red-circle {
+.content__box__image__red-circle {
   position: absolute;
+  top: -25%;
+  right: 30%;
   background: #FB3B64;
   border-radius: 41px;
   transform: rotate(-45deg);
   width: 90.12px;
   height: 90.12px;
-  right: 20vw;
-  top: 5%;
-  z-index: 1;
+  transform: translateZ(-10px);
+}
+.content__box__image--macbook {
+  background-image: url(img/macbook2.png);
+  transform-style: preserve-3d;
+}
+.content__box__image--iphone {
+  background-image: url(img/iphone.png);
+  height: 150px;
 }
 .content__box__blue-circle {
   position: absolute;
@@ -174,6 +181,7 @@ body {
   border-radius: 50%;
   height: 150px;
   width: 150px;
+  z-index: 1;
 }
 .content__box__title {
   font-weight: 400;
@@ -186,6 +194,7 @@ body {
   font-size: 14px;
   line-height: 150%;
   color: black;
+  text-align: left;
 }
 .content__rect {
   margin: 0 15px;
@@ -196,6 +205,7 @@ body {
   background: #55DFB4;
   border: 1px solid #E8E9ED;
   border-radius: 5px;
+  text-align: left;
 }
 .content__rect__image {
   position: absolute;
@@ -251,7 +261,7 @@ body {
   margin: 20px 0;
 }
 .pricing__box--basic {
-  margin: 15px 30px;
+  margin: 15px 40px;
   border: 1px solid #FB3B64;
 }
 .pricing__box--basic .pricing__box__btn {
@@ -273,7 +283,7 @@ body {
 }
 .pricing__box--premium {
   border: 1px solid #55DFB4;
-  margin: 15px 30px;
+  margin: 15px 40px;
 }
 .pricing__box--premium .pricing__box__btn {
   background-color: #55DFB4;
@@ -349,14 +359,29 @@ body {
   margin-bottom: 30px;
 }
 .contact__form__checkbox {
+  margin-top: 10px;
   display: flex;
   align-items: flex-start;
 }
 .contact__form__checkbox__check {
+  display: none;
+}
+.contact__form__checkbox__check + label:before {
+  content: "";
+  display: inline-block;
+  vertical-align: middle;
+  width: 24px;
+  height: 24px;
   border: 1px solid #95989A;
   border-radius: 4px;
-  height: 100%;
   margin-right: 10px;
+  background-color: #fff;
+}
+.contact__form__checkbox__check:checked + label:before {
+  content: "✓";
+  color: #08A6E4;
+  text-align: center;
+  background-color: white;
 }
 .contact__form__checkbox__label {
   font-family: "Open Sans";
@@ -406,6 +431,77 @@ body {
 }
 .footer__right__icon {
   margin-left: 10px;
+}
+
+@media only screen and (min-width: 1000px) {
+  .header {
+    padding: 0 80px;
+  }
+  .header__hamburger {
+    display: none;
+  }
+  .header__menu {
+    display: block;
+    margin: 0;
+    height: 70px;
+  }
+  .header__menu__link {
+    margin: 0;
+    margin-left: 20px;
+    display: flex;
+    align-items: center;
+    height: 100%;
+  }
+  .header__menu__link:hover {
+    border-bottom: 2px solid #08A6E4;
+  }
+  .header__menu-navbar {
+    display: flex;
+    height: 100%;
+  }
+  .intro__image {
+    margin-top: 30px;
+    height: 45vh;
+  }
+  .intro__title {
+    margin: 100px 0;
+  }
+  .intro__box__image {
+    width: 80px;
+  }
+  .intro__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .content {
+    padding: 50px 100px;
+  }
+  .content__box {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 40px;
+  }
+  .content__box__title {
+    margin-bottom: 30px;
+  }
+  .content__box__image {
+    width: 400px;
+  }
+  .content__box__red-circle {
+    right: 10%;
+  }
+  .content__box__blue-circle {
+    top: 10%;
+    left: 25%;
+  }
+  .content__box-left {
+    order: 1;
+  }
+  .content__box-right {
+    order: 2;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */
