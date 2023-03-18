@@ -171,7 +171,7 @@ body {
       &__red-circle {
         position: absolute;
         top: -25%;
-        right: 30%;
+        left: 55%;
         background: #FB3B64;
         border-radius: 41px;
         transform: rotate(-45deg);
@@ -232,6 +232,8 @@ body {
     &__image {
       position: absolute;
       top: 10%;
+      left: 50%;
+      transform: translateX(-50%);
       width: auto;
       height: 100%;
     }
@@ -510,7 +512,7 @@ body {
 
       &__link {
         margin: 0;
-        margin-left: 20px;
+        margin-left: 80px;
         display: flex;
         align-items: center;
         height: 100%;
@@ -527,14 +529,25 @@ body {
     }
   }
 
+  .hero {
+    &__title {
+      font-size: 49px;
+    }
+
+    &__btn {
+      width: 440px;
+    }
+  }
+
   .intro {
     &__image {
       margin-top: 30px;
-      height: 45vh;
+      height: 600px;
     }
     
     &__title {
       margin: 100px 0;
+      font-size: 36px;
     }
 
     &__box {
@@ -551,38 +564,180 @@ body {
   }
 
   .content {
-    padding: 50px 100px;
-    &__box {
-      display: flex;
-      flex-direction: row;
-      justify-content: space-between;
-      margin-bottom: 40px;
+    padding: 100px 70px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 
-      &__title {
-        margin-bottom: 30px;
-      }
-
-      &__image {
-        width: 400px;
-      }
-
-      &__red-circle {
-        right: 10%;
-      }
-
-      &__blue-circle {
-        top: 10%;
-        left: 25%;
-      }
+    &__wrapper {
+      max-width: 1200px;
     }
 
     &__box-left {
       order: 1;
+      width: 40%;
     }
 
     &__box-right {
       order: 2;
+      width: 40%;
+    }
+
+    
+    &__box {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      margin: 0;
+      margin-bottom: 40px;
+      padding: 50px 36px;
+      height: 100%;
+      width: 100%;
+
+      &__title {
+        margin-bottom: 30px;
+        margin-top: 40px;
+      }
+
+      &__image {
+        margin-top: 20px;
+        width: auto;
+        height: 90%;
+
+        &__red-circle {
+          top: -10%;
+          right: 5%;
+          width: 180px;
+          height: 180px;
+          transform: rotate(-45deg) translateZ(-10px);
+        }
+
+        &--macbook {
+          margin-right: 40px;
+        }
+
+        &--iphone {
+          height: 100%;
+        }
+      }
+
+      &__red-line {
+        margin-top: 40px;
+        margin-bottom: 50px;
+        width: 70%;
+        border: 2px solid #FB3B64;
+      }
+
+      &__blue-line {
+        margin-top: 40px;
+        margin-bottom: 50px;
+        width: 70%;
+        border: 2px solid $color-primary;
+      }
+
+      &__green-line {
+        margin-top: 40px;
+        margin-bottom: 80px;
+        width: 70%;
+        border: 2px solid #55DFB4;
+      }
+
+      &__blue-circle {
+        top: 7%;
+        left: 22%;
+        width: 290px;
+        height: 290px;
+      }
+
+      &--block {
+        display: block;
+        width: 60%;
+      }
+    }
+    
+    &__flex {
+      display: flex;
+      justify-content: space-between;
+      height: 350px;
+      max-width: 2400px;
+      width: 100%;
+    }
+
+    &__rect {
+      width: 400px;
+      order: 2;
+      margin-top: 0px;
+      height: 100%;
+      margin-right: 0;
+
+      &__image {
+        width: 70%;
+        text-align: center;
+        height: auto;
+        top: 25%;
+        left: 10%;
+        transform: translate(0);
+      }
     }
   }
 
+
+  .pricing {
+    text-align: center;
+    &__flex {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+    }
+
+    &__title {
+      margin-top: 100px;
+      margin-bottom: 40px;
+    }
+
+    &__box {
+      margin: 20px 50px;
+      display: block;
+      width: 400px;
+
+      &__left {
+        display: block;
+        margin: 0;
+      }
+      &__right {
+        margin-top: 50px;
+        margin-bottom: 50px;
+        text-align: center;
+      }
+    }
+  }
+
+  .contact {
+    display: flex;
+    width: 50vw;
+    min-width: 1000px;
+    margin: 50px auto;
+    margin-top: 150px;
+    
+    &__left {
+      width: 50%;
+    }
+
+    &__right {
+      width: 50%;
+    }
+
+    &__subtitle {
+      margin-top: 30px;
+    }
+
+    &__info {
+      margin-right: 30px;
+    }
+
+    &__info-flex {
+      display: flex;
+    }
+  }
 }
