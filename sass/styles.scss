@@ -652,13 +652,14 @@ body {
       &--block {
         display: block;
         width: 60%;
+        padding-right: 20%;
       }
     }
     
     &__flex {
       display: flex;
       justify-content: space-between;
-      height: 350px;
+      height: 370px;
       max-width: 2400px;
       width: 100%;
     }
