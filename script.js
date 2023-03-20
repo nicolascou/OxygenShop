@@ -112,6 +112,43 @@ function clickOutsideModal(event) {
   }
 }
 
+// Change currency
+const selectedCurrency = document.getElementById('selectCurrency');
+const prices = document.getElementsByClassName('currency-price');
+let fromCurrency = 'usd';
+
+async function changeCurrency() {
+  let data = {}
+  await fetch(`https://cdn.jsdelivr.net/gh/fawazahmed0/currency-api@1/latest/currencies/${fromCurrency}.json`)
+  .then(resp => resp.json())
+  .then((json) => {
+    data = json;
+  });
+
+  let symbol = '';
+  if (selectedCurrency.value === 'eur') {
+    symbol = '€';
+  } else if (selectedCurrency.value === 'usd') {
+    symbol = '$';
+  } else if (selectedCurrency.value === 'gbp') {
+    symbol = '\u00a3'
+  }
+
+  for (let i = 0; i < prices.length; i++) {
+    let price = prices[i].textContent.substring(1);
+    
+    price = Math.round(price * data[fromCurrency][selectedCurrency.value]);
+
+    prices[i].textContent = symbol + price;
+  }
+
+  fromCurrency = selectedCurrency.value;
+}
+
+selectedCurrency.addEventListener('change', changeCurrency);
+
+// Slider
+
 
 // Window or document event listeners 
 document.addEventListener('click', (e) => {

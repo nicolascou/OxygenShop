@@ -134,11 +134,16 @@
 
     <section class="pricing">
       <h2 class="pricing__title">Pricing</h2>
+      <select id="selectCurrency" class="select-currency">
+        <option value="usd">USD</option>
+        <option value="eur">EUR</option>
+        <option value="gbp">GBP</option>
+      </select>
       <div class="pricing__flex">
       <div class="pricing__box pricing__box--basic">
         <div class="pricing__box__left">
           <p class="pricing__box__left__name">Basic</p>
-          <p class="pricing__box__left__price">$0</p>
+          <p class="pricing__box__left__price currency-price">$0</p>
         </div>
         <div class="pricing__box__right">
           <ul>
@@ -185,7 +190,7 @@
       <div class="pricing__box pricing__box--professional">
         <div class="pricing__box__left">
           <p class="pricing__box__left__name">Professional</p>
-          <p class="pricing__box__left__price">$25</p>
+          <p class="pricing__box__left__price currency-price">$25</p>
           <p class="pricing__box__left__limit">Limited offer</p>
         </div>
         <div class="pricing__box__right">
@@ -233,7 +238,7 @@
       <div class="pricing__box pricing__box--premium">
         <div class="pricing__box__left">
           <p class="pricing__box__left__name">Premium</p>
-          <p class="pricing__box__left__price">$60</p>
+          <p class="pricing__box__left__price currency-price">$60</p>
           <p class="pricing__box__left__limit">Limited offer</p>
         </div>
         <div class="pricing__box__right">
