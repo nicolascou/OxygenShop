@@ -1,0 +1,68 @@
+@import "globals";
+
+.intro {
+  margin-bottom: 100px;
+  
+  &__image {
+    width: auto;
+    height: 300px;
+    background-image: url(img/background1.png);
+    background-position: center;
+    background-size: cover;
+  }
+
+  &__title {
+    font-weight: 300;
+    font-size: 30px;
+    line-height: 35px;
+    text-align: center;
+    margin: 25px 40px;
+  }
+
+  &__box {
+    text-align: center;
+    &__image {
+      width: 65px;
+      height: 65px;
+    }
+
+    &__number {
+      font-weight: 800;
+      font-size: 20px;
+      letter-spacing: 5.96px;
+    }
+
+    &__text {
+      font-weight: 400;
+      font-size: 17px;
+      color: $color-grey;
+      margin: 25px 100px;
+    }
+  }
+}
+
+@media only screen and (min-width: 1000px) {
+  .intro {
+    &__image {
+      margin-top: 30px;
+      height: 600px;
+    }
+    
+    &__title {
+      margin: 100px 0;
+      font-size: 36px;
+    }
+
+    &__box {
+      &__image {
+        width: 80px;
+      }
+    }
+
+    &__wrapper {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+}

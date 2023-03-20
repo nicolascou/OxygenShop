@@ -1,0 +1,58 @@
+@import "globals";
+
+.modal {
+  position: fixed;
+  z-index: 20;
+  display: none;
+  padding: 10px;
+  width: 80%;
+  background-color: white;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: 0px 3px 6px #555;
+  border: 2px solid black;
+  border-radius: 30px;
+  text-align: center;
+
+  &__title {
+    font-size: 24px;
+    margin-top: 40px;
+    margin-bottom: 60px;
+    font-weight: bold;
+  }
+
+  &__cross {
+    position: absolute;
+    top: 20px;
+    left: 90%;
+    cursor: pointer;
+  }
+
+  &__form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 40px 0;
+
+    &__input {
+      font-size: 20px;
+      border: none;
+      outline: none;
+      border-bottom: #95989A 2px solid;
+      padding: 5px;
+      margin-right: 30px;
+      width: 60%;
+    }
+
+    &__btn {
+      background-color: #08A6E4;
+      border: none;
+      outline: none;
+      padding: 10px 20px;
+      cursor: pointer;
+      color: white;
+      font-weight: bold;
+    }
+  }
+}

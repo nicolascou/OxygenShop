@@ -1,0 +1,223 @@
+@import "globals";
+
+.content {
+  background-color: #F7F7F7;
+  padding-top: 20px;
+  padding-bottom: 40px;
+  text-align: center;
+  
+  &__box {
+    display: inline-block;
+    text-align: left;
+    margin: 20px 15px;
+    border: 1px solid #E8E9ED;
+    border-radius: 5px;
+    background-color: white;
+    padding: 30px 20px;
+    position: relative;
+
+    &__image {
+      display: block;
+      position: relative;
+      margin-top: 10px;
+      margin-bottom: 25px;
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center;
+      height: 110px;
+      z-index: 2;
+
+      &__red-circle {
+        position: absolute;
+        top: -25%;
+        left: 55%;
+        background: #FB3B64;
+        border-radius: 41px;
+        transform: rotate(-45deg);
+        width: 90.12px;
+        height: 90.12px;
+        transform: translateZ(-10px);
+      }
+
+      &--macbook {
+        background-image: url(img/macbook2.png);
+        transform-style: preserve-3d;
+      }
+      &--iphone {
+        background-image: url(img/iphone.png);
+        height: 150px;
+      }
+    }
+
+    &__blue-circle {
+      position: absolute;
+      top: 5%;
+      left: 50%;
+      transform: translateX(-62%);
+      background: $color-primary;
+      border-radius: 50%;
+      height: 150px;
+      width: 150px;
+      z-index: 1;
+    }
+    
+    &__title {
+      font-weight: 400;
+      font-size: 30px;
+      line-height: 35px;
+      margin-bottom: 50px;
+    }
+
+    &__text {
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 150%;
+      color: black;
+      text-align: left;
+    }
+  }
+
+  &__rect {
+    margin: 0 15px;
+    margin-top: -25px;
+    position: relative;
+    z-index: 5;
+    height: 200px;
+    background: #55DFB4;
+    border: 1px solid #E8E9ED;
+    border-radius: 5px;
+    text-align: left;
+
+    &__image {
+      position: absolute;
+      top: 10%;
+      left: 50%;
+      transform: translateX(-50%);
+      width: auto;
+      height: 100%;
+    }
+  }
+}
+
+@media only screen and (min-width: 1000px) {
+
+  .content {
+    padding: 100px 70px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &__wrapper {
+      max-width: 1200px;
+    }
+
+    &__box-left {
+      order: 1;
+      width: 40%;
+    }
+
+    &__box-right {
+      order: 2;
+      width: 40%;
+    }
+
+    
+    &__box {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      margin: 0;
+      margin-bottom: 40px;
+      padding: 50px 36px;
+      height: 100%;
+      width: 100%;
+
+      &__title {
+        margin-bottom: 30px;
+        margin-top: 40px;
+      }
+
+      &__image {
+        margin-top: 20px;
+        width: auto;
+        height: 90%;
+
+        &__red-circle {
+          top: -10%;
+          right: 5%;
+          width: 180px;
+          height: 180px;
+          transform: rotate(-45deg) translateZ(-10px);
+        }
+
+        &--macbook {
+          margin-right: 40px;
+        }
+
+        &--iphone {
+          height: 100%;
+        }
+      }
+
+      &__red-line {
+        margin-top: 40px;
+        margin-bottom: 50px;
+        width: 70%;
+        border: 2px solid #FB3B64;
+      }
+
+      &__blue-line {
+        margin-top: 40px;
+        margin-bottom: 50px;
+        width: 70%;
+        border: 2px solid $color-primary;
+      }
+
+      &__green-line {
+        margin-top: 40px;
+        margin-bottom: 80px;
+        width: 70%;
+        border: 2px solid #55DFB4;
+      }
+
+      &__blue-circle {
+        top: 7%;
+        left: 22%;
+        width: 290px;
+        height: 290px;
+      }
+
+      &--block {
+        display: block;
+        width: 60%;
+        padding-right: 20%;
+      }
+    }
+    
+    &__flex {
+      display: flex;
+      justify-content: space-between;
+      height: 370px;
+      max-width: 2400px;
+      width: 100%;
+    }
+
+    &__rect {
+      width: 400px;
+      order: 2;
+      margin-top: 0px;
+      height: 100%;
+      margin-right: 0;
+
+      &__image {
+        width: 70%;
+        text-align: center;
+        height: auto;
+        top: 25%;
+        left: 10%;
+        transform: translate(0);
+      }
+    }
+  }
+  
+}
