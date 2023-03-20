@@ -148,7 +148,78 @@ async function changeCurrency() {
 selectedCurrency.addEventListener('change', changeCurrency);
 
 // Slider
+class Slider {
+  constructor(sliderId) {
+    this.element = document.getElementById(sliderId);
+    this.images = document.querySelectorAll('.slider__image');
+    this.index = 0;
+    this.points = document.querySelectorAll('.slider__pointbox__point');
+  }
+  
+  moveRight() {
+    let prevIdx = this.index;
+    this.index++;
+    if (this.index > this.images.length - 1) {
+      this.index = 0;
+    }
+    this._changeCurrentImage(prevIdx);
+  }
+  
+  moveLeft() {
+    let prevIdx = this.index;
+    this.index--;
+    if (this.index < 0) {
+      this.index = this.images.length - 1;
+    }
+    this._changeCurrentImage(prevIdx);
+  }
 
+  changeImageByIdx(idx) {
+    if (idx > this.images.length-1 || idx < 0) return;
+    let prevIdx = this.index;
+    this.index = idx;
+    this._changeCurrentImage(prevIdx);
+  }
+
+  _changeCurrentImage(prevIdx) {
+    this.images[prevIdx].classList.add('slider__image--hidden');
+    this.images[this.index].classList.remove('slider__image--hidden');
+
+    // Change selected point
+    this.points[prevIdx].classList.remove('slider__pointbox__point--selected');
+    this.points[this.index].classList.add('slider__pointbox__point--selected');
+  }
+}
+
+let slider = new Slider('slider');
+const sliderNext = document.getElementById('sliderNext');
+const sliderPrev = document.getElementById('sliderPrev');
+const sliderPoints = document.getElementById('sliderPoints');
+
+sliderNext.addEventListener('click', function() {
+  slider.moveRight();
+  restartInterval();
+});
+sliderPrev.addEventListener('click', function() {
+  slider.moveLeft();
+  restartInterval();
+});
+
+sliderPoints.addEventListener('click', function(e) {
+  if (e.target === sliderPoints) {
+    return;
+  } else {
+    slider.changeImageByIdx(e.target.id.substring(e.target.id.length-1));
+    restartInterval();
+  }
+});
+
+let sliderInterval = setInterval(() => slider.moveRight(), 2000);
+
+function restartInterval() {
+  clearInterval(sliderInterval);
+  sliderInterval = setInterval(() => slider.moveRight(), 2000);
+}
 
 // Window or document event listeners 
 document.addEventListener('click', (e) => {
