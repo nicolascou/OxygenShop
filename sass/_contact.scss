@@ -75,6 +75,7 @@
         border-radius: 4px;
         margin-right: 10px;
         background-color: #fff;
+        transform: translateZ(-10px);
       }
 
       &__check:checked + label:before {

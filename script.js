@@ -50,7 +50,7 @@ submitBtn.addEventListener('click', function() {
     errors = true;
   }
   if (!checkboxInput.checked) {
-    labelForCheckbox.style.cssText = 'border: 1px solid red; margin-right: 8px; width: 28px;';
+    labelForCheckbox.style.cssText = 'border: 1px solid red; margin-right: 8px; height: 28px; width: 28px; border-radius: 4px; transform-style: preserve-3d;';
     errors = true;
   }
 
@@ -184,6 +184,11 @@ class Slider {
   _changeCurrentImage(prevIdx) {
     this.images[prevIdx].classList.add('slider__image--hidden');
     this.images[this.index].classList.remove('slider__image--hidden');
+    this.images[this.index].style.opacity = '0.1';
+    console.log(this.images[this.index])
+    setTimeout(() => {
+      this.images[this.index].style.opacity = '1';
+    }, 10);
 
     // Change selected point
     this.points[prevIdx].classList.remove('slider__pointbox__point--selected');
@@ -214,11 +219,11 @@ sliderPoints.addEventListener('click', function(e) {
   }
 });
 
-let sliderInterval = setInterval(() => slider.moveRight(), 2000);
+let sliderInterval = setInterval(() => slider.moveRight(), 3000);
 
 function restartInterval() {
   clearInterval(sliderInterval);
-  sliderInterval = setInterval(() => slider.moveRight(), 2000);
+  sliderInterval = setInterval(() => slider.moveRight(), 3000);
 }
 
 // Window or document event listeners 
