@@ -1,0 +1,43 @@
+.hero {
+  margin-top: 70px;
+  padding-top: 100px;
+  text-align: center;
+
+  &__title {
+    font-weight: 400;
+    font-size: 35px;
+    margin-bottom: 20px;
+  }
+
+  &__subtitle {
+    font-size: 16px;
+    margin: 0 30px;
+    margin-bottom: 50px;
+  }
+
+  &__btn {
+    display: inline-block;
+    border-radius: 40px;
+    box-shadow: 5px 10px 14px rgba(7, 172, 230, 0.29);
+    background-color: #08A6E4;
+    padding: 22px 0;
+    width: 275px;
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    font-weight: 700;
+    margin-bottom: 50px;
+  }
+}
+
+@media only screen and (min-width: 1000px) {
+  .hero {
+    &__title {
+      font-size: 49px;
+    }
+
+    &__btn {
+      width: 440px;
+    }
+  }
+}

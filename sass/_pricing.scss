@@ -1,0 +1,143 @@
+.pricing {
+  text-align: center;
+
+  &__title {
+    display: block;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 42px;
+    margin-top: 40px;
+    margin-bottom: 20px;
+  }
+
+  &__box {
+    position: relative;
+    margin: 60px 15px;
+    padding: 30px 10px;
+    border-radius: 18px;
+    display: grid;
+    grid-template-columns: .5fr .5fr;
+    grid-template-rows: 1fr;
+
+    &__left {
+      margin-top: 70px;
+      
+      &__name {
+        color: #13253B;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 24px;
+      }
+
+      &__price {
+        font-family: 'Open Sans';
+        font-weight: 300;
+        font-size: 46px;
+        line-height: 64px;
+      }
+
+      &__limit {
+        font-weight: 700;
+        font-size: 12px;
+      }
+    }
+
+    &__right {
+      text-align: left;
+
+      &__item {
+        list-style: none;
+        margin: 20px 0;
+      }
+    }
+
+    &--basic {
+      margin: 15px 40px;
+      border: 1px solid #FB3B64;
+      .pricing__box {
+        &__btn {
+          background-color: #FB3B64;
+        }
+        &__left__price {
+          color: #FB3B64;
+        }
+      }
+    }
+
+    &--professional {
+      border: solid 1px #08A6E4;
+      box-shadow: 5px 10px 27px rgba(7, 172, 230, 0.29);
+      padding: 50px 10px;
+      .pricing__box {
+        &__btn {
+          background-color: #08A6E4;
+        }
+        &__left__price {
+          color: #08A6E4;
+        }
+      }
+    }
+
+    &--premium {
+      border: 1px solid #55DFB4;
+      margin: 15px 40px;
+      .pricing__box {
+        &__btn {
+          background-color: #55DFB4;
+        }
+        &__left__price {
+          color: #55DFB4;
+        }
+      }
+    }
+
+    &__btn {
+      position: absolute;
+      bottom: -25px;
+      left: 50%;
+      transform: translateX(-50%);
+      border-radius: 23px;
+      border: none;
+      width: 150px;
+      height: 50px;
+      font-weight: 700;
+      font-size: 13px;
+      color: white;
+      cursor: pointer;
+    }
+  }
+}
+
+
+@media only screen and (min-width: 1000px) {
+  .pricing {
+    text-align: center;
+    &__flex {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+    }
+
+    &__title {
+      margin-top: 100px;
+      margin-bottom: 40px;
+    }
+
+    &__box {
+      margin: 20px 50px;
+      display: block;
+      width: 400px;
+
+      &__left {
+        display: block;
+        margin: 0;
+      }
+      &__right {
+        margin-top: 50px;
+        margin-bottom: 50px;
+        text-align: center;
+      }
+    }
+  }
+}
