@@ -136,7 +136,7 @@
 .intro__image {
   width: auto;
   height: 300px;
-  background-image: url(/img/background1.png);
+  background-image: url(../img/background1.png);
   background-position: center;
   background-size: cover;
 }
@@ -223,11 +223,11 @@
   transform: translateZ(-10px);
 }
 .content__box__image--macbook {
-  background-image: url(/img/macbook2.png);
+  background-image: url(../img/macbook2.png);
   transform-style: preserve-3d;
 }
 .content__box__image--iphone {
-  background-image: url(/img/iphone.png);
+  background-image: url(../img/iphone.png);
   height: 150px;
 }
 .content__box__blue-circle {
@@ -258,7 +258,7 @@
   margin: 0 15px;
   margin-top: -25px;
   position: relative;
-  z-index: 5;
+  z-index: 2;
   height: 200px;
   background: #55DFB4;
   border: 1px solid #E8E9ED;

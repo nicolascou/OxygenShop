@@ -40,11 +40,11 @@
       }
 
       &--macbook {
-        background-image: url(/img/macbook2.png);
+        background-image: url(../img/macbook2.png);
         transform-style: preserve-3d;
       }
       &--iphone {
-        background-image: url(/img/iphone.png);
+        background-image: url(../img/iphone.png);
         height: 150px;
       }
     }
@@ -81,7 +81,7 @@
     margin: 0 15px;
     margin-top: -25px;
     position: relative;
-    z-index: 5;
+    z-index: 2;
     height: 200px;
     background: #55DFB4;
     border: 1px solid #E8E9ED;
