@@ -37,21 +37,38 @@ const nameInput = document.getElementById('name');
 const emailInput = document.getElementById('email');
 const checkboxInput = document.getElementById('checkbox');
 const labelForCheckbox = document.getElementById('labelForCheckbox');
+const errorName = document.getElementById('errorName');
+const errorEmail = document.getElementById('errorEmail');
+const errorCheckbox = document.getElementById('errorCheckbox');
 
 submitBtn.addEventListener('click', function() {
   let errors = false;
 
   if (nameInput.value.length < 2 || nameInput.value.length > 100) {
     nameInput.style.borderBottom = '1px solid red';
+    errorName.style.display = 'block';
     errors = true;
+  } else {
+    nameInput.style.borderBottom = '';
+    errorName.style.display = 'none';
   }
+
   if (! /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(emailInput.value)) {
     emailInput.style.borderBottom = '1px solid red';
+    errorEmail.style.display = 'block';
     errors = true;
+  } else {
+    emailInput.style.borderBottom = '1px solid #95989A';
+    errorEmail.style.display = 'none';
   }
+
   if (!checkboxInput.checked) {
     labelForCheckbox.style.cssText = 'border: 1px solid red; margin-right: 8px; height: 28px; width: 28px; border-radius: 4px; transform-style: preserve-3d;';
+    errorCheckbox.style.display = 'block';
     errors = true;
+  } else {
+    labelForCheckbox.style.cssText = '';
+    errorCheckbox.style.display = 'none';
   }
 
   if (! errors) {

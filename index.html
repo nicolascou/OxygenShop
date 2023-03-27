@@ -324,10 +324,13 @@
     </div>
     <div class="contact__right">
       <form class="contact__form">
+        <p id="errorName" class="contact__form__error">Name must contain 2 characters or more</p>
         <label class="contact__form__label" for="name">NAME</label>  
         <input class="contact__form__input" id="name" type="text">
+        <p id="errorEmail" class="contact__form__error">Not valid email</p>
         <label class="contact__form__label" for="email">EMAIL</label>
         <input class="contact__form__input" id="email" type="email">
+        <p id="errorCheckbox" class="contact__form__error">You must check the box</p>
         <div class="contact__form__checkbox">
           <input class="contact__form__checkbox__check" id="checkbox" type="checkbox">
           <label for="checkbox" id="labelForCheckbox"></label>
