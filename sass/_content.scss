@@ -40,11 +40,11 @@
       }
 
       &--macbook {
-        background-image: url(img/macbook2.png);
+        background-image: url(/img/macbook2.png);
         transform-style: preserve-3d;
       }
       &--iphone {
-        background-image: url(img/iphone.png);
+        background-image: url(/img/iphone.png);
         height: 150px;
       }
     }

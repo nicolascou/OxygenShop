@@ -5,7 +5,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>OxygenShop</title>
-  <link rel='stylesheet' href='styles.css'>
+  <link rel='stylesheet' href='css/styles.css'>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;700&display=swap" rel="stylesheet">
@@ -28,10 +28,10 @@
 
     <div id="mobileMenu" class="header__menu header__menu--hidden">
       <nav class="header__menu-navbar">
-        <li class="header__menu__link header__menu__link--hover">WHY US</li>
-        <li class="header__menu__link header__menu__link--hover">BENEFITS</li>
-        <li class="header__menu__link header__menu__link--hover">PRICES</li>
-        <li class="header__menu__link header__menu__link--hover">CONTACT</li>
+        <li class="header__menu__link header__menu__link--hover"><a href="#intro">WHY US</a></li>
+        <li href="" class="header__menu__link header__menu__link--hover"><a href="#content">BENEFITS</a></li>
+        <li href="" class="header__menu__link header__menu__link--hover"><a href="#pricing">PRICES</a></li>
+        <li href="#contact" class="header__menu__link header__menu__link--hover"><a href="#contact">CONTACT</a></li>
       </nav>
     </div>
   </header>
@@ -52,7 +52,7 @@
       <a href="" class="hero__btn">Open your shop</a>
     </div>
 
-    <section class="intro">
+    <section class="intro" id="intro">
       <div class="intro__image"></div>
       <p class="intro__title">The most popular sales platform in country</p>
       <div class="intro__wrapper">
@@ -91,7 +91,7 @@
       </div>
     </section>
 
-    <section class="content">
+    <section class="content" id="content">
       <div class="content__wrapper">
         <div class="content__box">
           <div class="content__box-right">
@@ -132,7 +132,7 @@
       </div>
     </section>
 
-    <section class="pricing">
+    <section class="pricing" id="pricing">
       <h2 class="pricing__title">Pricing</h2>
       <select id="selectCurrency" class="select-currency">
         <option value="usd">USD</option>
@@ -303,7 +303,7 @@
     </div>
   </div>
 
-  <section class="contact">
+  <section class="contact" id="contact">
     <div class="contact__left">
       <p class="contact__title">Any questions?</p>
       <p class="contact__subtitle">Leave your email address or call us!</p>

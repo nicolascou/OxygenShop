@@ -185,7 +185,6 @@ class Slider {
     this.images[prevIdx].classList.add('slider__image--hidden');
     this.images[this.index].classList.remove('slider__image--hidden');
     this.images[this.index].style.opacity = '0.1';
-    console.log(this.images[this.index])
     setTimeout(() => {
       this.images[this.index].style.opacity = '1';
     }, 10);
