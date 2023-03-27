@@ -2,6 +2,8 @@
 
 .pricing {
   text-align: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
 
   &__title {
     display: block;
@@ -14,12 +16,14 @@
 
   &__box {
     position: relative;
-    margin: 60px 15px;
+    margin: 40px 100px;
+    margin-bottom: 80px;
     padding: 30px 10px;
     border-radius: 18px;
     display: grid;
     grid-template-columns: .5fr .5fr;
     grid-template-rows: 1fr;
+    transition: all .3s;
 
     &__left {
       margin-top: 70px;
@@ -54,7 +58,6 @@
     }
 
     &--basic {
-      margin: 15px 40px;
       border: 1px solid #FB3B64;
       .pricing__box {
         &__btn {
@@ -68,8 +71,6 @@
 
     &--professional {
       border: solid 1px #08A6E4;
-      box-shadow: 5px 10px 27px rgba(7, 172, 230, 0.29);
-      padding: 50px 10px;
       .pricing__box {
         &__btn {
           background-color: #08A6E4;
@@ -82,7 +83,6 @@
 
     &--premium {
       border: 1px solid #55DFB4;
-      margin: 15px 40px;
       .pricing__box {
         &__btn {
           background-color: #55DFB4;
@@ -107,6 +107,11 @@
       color: white;
       cursor: pointer;
     }
+
+    &:hover {
+      box-shadow: 5px 10px 27px rgba(7, 172, 230, 0.29);
+      transform: scale(1.1);
+    }
   }
 }
 
@@ -127,7 +132,7 @@
     }
 
     &__box {
-      margin: 20px 30px;
+      margin: 50px 30px;
       display: block;
       width: 400px;
 

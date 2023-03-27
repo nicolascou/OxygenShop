@@ -377,6 +377,8 @@
 }
 .pricing {
   text-align: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
 }
 .pricing__title {
   display: block;
@@ -388,12 +390,14 @@
 }
 .pricing__box {
   position: relative;
-  margin: 60px 15px;
+  margin: 40px 100px;
+  margin-bottom: 80px;
   padding: 30px 10px;
   border-radius: 18px;
   display: grid;
   grid-template-columns: 0.5fr 0.5fr;
   grid-template-rows: 1fr;
+  transition: all 0.3s;
 }
 .pricing__box__left {
   margin-top: 70px;
@@ -422,7 +426,6 @@
   margin: 20px 0;
 }
 .pricing__box--basic {
-  margin: 15px 40px;
   border: 1px solid #FB3B64;
 }
 .pricing__box--basic .pricing__box__btn {
@@ -433,8 +436,6 @@
 }
 .pricing__box--professional {
   border: solid 1px #08A6E4;
-  box-shadow: 5px 10px 27px rgba(7, 172, 230, 0.29);
-  padding: 50px 10px;
 }
 .pricing__box--professional .pricing__box__btn {
   background-color: #08A6E4;
@@ -444,7 +445,6 @@
 }
 .pricing__box--premium {
   border: 1px solid #55DFB4;
-  margin: 15px 40px;
 }
 .pricing__box--premium .pricing__box__btn {
   background-color: #55DFB4;
@@ -466,6 +466,10 @@
   color: white;
   cursor: pointer;
 }
+.pricing__box:hover {
+  box-shadow: 5px 10px 27px rgba(7, 172, 230, 0.29);
+  transform: scale(1.1);
+}
 
 @media only screen and (min-width: 1000px) {
   .pricing {
@@ -482,7 +486,7 @@
     margin-bottom: 40px;
   }
   .pricing__box {
-    margin: 20px 30px;
+    margin: 50px 30px;
     display: block;
     width: 400px;
   }
