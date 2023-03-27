@@ -25,6 +25,15 @@ function scrollerWidth() {
 
 // Return to the top
 const returnTop = document.getElementById('returnTop');
+
+function showOrNotReturnTop() {
+  if (window.scrollY > 15) {
+    returnTop.style.display = 'block';
+  } else {
+    returnTop.style.display = 'none';
+  }
+}
+
 returnTop.addEventListener('click', function() {
   setTimeout(() => {
     window.scrollTo({top: 0, behavior: 'smooth'});
@@ -46,7 +55,7 @@ submitBtn.addEventListener('click', function() {
 
   if (nameInput.value.length < 2 || nameInput.value.length > 100) {
     nameInput.style.borderBottom = '1px solid red';
-    errorName.style.display = 'block';
+    errorName.style.display = 'inline-block';
     errors = true;
   } else {
     nameInput.style.borderBottom = '';
@@ -84,6 +93,7 @@ submitBtn.addEventListener('click', function() {
     })
       .then((response) => response.json())
       .then((json) => console.log(json));
+    window.location.reload();
   } else {
     return;
   }
@@ -250,4 +260,5 @@ document.addEventListener('click', (e) => {
 window.addEventListener('scroll', () => {
   scrollerWidth();
   checkScrollModal();
+  showOrNotReturnTop();
 });

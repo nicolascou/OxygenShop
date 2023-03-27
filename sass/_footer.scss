@@ -8,6 +8,11 @@
   background: #F7F7F7;
   padding: 20px;
 
+  a {
+    height: 100%;
+    display: inline-block;
+  }
+
   &__left {
     &__title {
       font-weight: 300;

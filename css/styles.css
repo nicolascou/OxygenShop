@@ -3,12 +3,13 @@
   padding: 15px 25px;
   color: #08A6E4;
   box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.29);
-  position: absolute;
+  position: fixed;
   top: 0;
   background-color: white;
   width: 100%;
   min-height: 70px;
   min-width: 320px;
+  z-index: 4;
 }
 .header__flex {
   display: flex;
@@ -588,7 +589,7 @@
 .contact__form__error {
   font-size: 12px;
   color: red;
-  margin: 10px 0;
+  margin-bottom: 10px;
   display: none;
 }
 .contact__form__btn-wrapper {
@@ -725,6 +726,10 @@
   background: #F7F7F7;
   padding: 20px;
 }
+.footer a {
+  height: 100%;
+  display: inline-block;
+}
 .footer__left__title {
   font-weight: 300;
   font-size: 26px;
@@ -762,18 +767,26 @@ body {
 }
 
 .return-top {
-  margin-bottom: 100px;
-  width: 100%;
-  text-align: center;
-}
-.return-top__btn {
-  width: 200px;
-  padding: 15px 20px;
+  position: fixed;
+  display: none;
+  bottom: 20px;
+  right: 20px;
+  z-index: 10;
+  padding: 15px;
   background-color: #55DFB4;
   border-radius: 30px;
   border: none;
-  box-shadow: 5px 10px 14px rgba(33, 87, 71, 0.29);
+  box-shadow: 2px 4px 8px rgba(33, 87, 71, 0.29);
   cursor: pointer;
+  animation: opacityOnShow 0.3s;
+}
+@keyframes opacityOnShow {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 .select-currency {

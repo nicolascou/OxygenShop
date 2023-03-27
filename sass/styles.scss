@@ -31,18 +31,26 @@ body {
 }
 
 .return-top {
-  margin-bottom: 100px;
-  width: 100%;
-  text-align: center;
+  position: fixed;
+  display: none;
+  bottom: 20px;
+  right: 20px;
+  z-index: 10;
 
-  &__btn {
-    width: 200px;
-    padding: 15px 20px;
-    background-color: $color-green;
-    border-radius: 30px;
-    border: none;
-    box-shadow: 5px 10px 14px rgba(33, 87, 71, 0.29);
-    cursor: pointer;
+  padding: 15px;
+  background-color: $color-green;
+  border-radius: 30px;
+  border: none;
+  box-shadow: 2px 4px 8px rgba(33, 87, 71, 0.29);
+  cursor: pointer;
+  animation: opacityOnShow .3s;
+
+  @keyframes opacityOnShow {
+    from {
+      opacity: 0;
+    } to {
+      opacity: 1;
+    }
   }
 }
 
